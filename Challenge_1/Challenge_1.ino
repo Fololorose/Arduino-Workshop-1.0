@@ -19,6 +19,7 @@ void setup() {
 }
 
 void loop() {
+  // detect distance
   digitalWrite(pinTrip,LOW);
   delayMicroseconds(2);
   digitalWrite(pinTrip,HIGH);
@@ -31,7 +32,7 @@ void loop() {
   Serial.print(distance);
   Serial.println("cm");
 
-  int stop_distance = 10;
+  int stop_distance = 10; //set a distance limit for stopping
 
   if (distance > stop_distance) {
     stop();
