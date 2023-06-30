@@ -56,6 +56,13 @@ void turnLeft2() {
   analogWrite(SB, 150);
 }
 
+void turnLeft3() {
+  digitalWrite(DA, LOW);
+  analogWrite(SA, 150);
+  digitalWrite(DB, HIGH);
+  analogWrite(SB, 255);
+}
+
 void turnRight1() {
   digitalWrite(DA, HIGH);
   analogWrite(SA, 150);
@@ -66,6 +73,13 @@ void turnRight1() {
 void turnRight2() {
   digitalWrite(DA, HIGH);
   analogWrite(SA, 150);
+  digitalWrite(DB, LOW);
+  analogWrite(SB, 150);
+}
+
+void turnRight3() {
+  digitalWrite(DA, HIGH);
+  analogWrite(SA, 2550);
   digitalWrite(DB, LOW);
   analogWrite(SB, 150);
 }
