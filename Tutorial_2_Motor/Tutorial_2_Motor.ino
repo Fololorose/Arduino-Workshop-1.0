@@ -79,7 +79,7 @@ void turnRight2() {
 
 void turnRight3() {
   digitalWrite(DA, HIGH);
-  analogWrite(SA, 2550);
+  analogWrite(SA, 255);
   digitalWrite(DB, LOW);
   analogWrite(SB, 150);
 }
